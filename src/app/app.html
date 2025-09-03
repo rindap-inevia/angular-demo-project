@@ -1,0 +1,16 @@
+<main>
+    <ul class="users">
+     @for (user of users; track user.id) {
+        <li><app-user [user]="user"  [selected]="user.id === selectedUserId" (select)="onSelectUser($event)"/></li>
+     }
+    </ul>
+
+
+@if (selectedUser) {
+
+   <app-tasks [userId] ="selectedUser.id" [name]="selectedUser.name"></app-tasks>
+   
+}
+
+</main>
+<!-- <router-outlet /> -->
