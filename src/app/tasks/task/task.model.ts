@@ -1,8 +1,13 @@
 export interface Task{
      id:string; 
-  title:string | undefined;
-  summary:string | undefined; 
-  dueDate:number | undefined;
-  userId:string | undefined; 
+  title:string ;
+  summary:string ;
+  dueDate:string ;
+  userId:string ;
  
+}
+
+
+export interface NewTaskData{
+ title:string, summary:string,  date:string,
 }

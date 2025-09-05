@@ -20,13 +20,6 @@ export class App {
   
   selectedUserId?:string;
 
-  get userId (){
-    return 'u1';
-  }
-get name(){
-  return 'Jasmine Washington';
-}
-
 
   get selectedUser(){
     return this.users.find((user) => user.id === this.selectedUserId)!;
